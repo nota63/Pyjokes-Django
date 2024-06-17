@@ -1,0 +1,138 @@
+/* neutral.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+section {
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+div {
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"] {
+    width: 800px; /* Make the jokes box bigger */
+    height: 100px;
+    font-size: 24px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    background-color: #fff;
+    color: #333;
+}
+
+input[type="text"]:focus {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    outline: none;
+    transform: scale(1.05);
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateZ(-30px); }
+    100% { opacity: 1; transform: translateZ(0); }
+}
+
+.-neutral-class {
+    animation: fadeIn 1s forwards;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.typing-animation {
+    animation: typing 3s steps(30, end), fadeIn 1s;
+}
+
+.typing-animation::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.colorful-letters span {
+    display: inline-block;
+    animation: letter-fade 0.5s forwards;
+    opacity: 0;
+    transform: translateZ(-30px);
+    font-size: 36px;
+    margin: 0 2px;
+}
+
+.colorful-letters span:nth-child(1) { animation-delay: 0s; color: #e74c3c; }
+.colorful-letters span:nth-child(2) { animation-delay: 0.1s; color: #e67e22; }
+.colorful-letters span:nth-child(3) { animation-delay: 0.2s; color: #f1c40f; }
+.colorful-letters span:nth-child(4) { animation-delay: 0.3s; color: #2ecc71; }
+.colorful-letters span:nth-child(5) { animation-delay: 0.4s; color: #1abc9c; }
+.colorful-letters span:nth-child(6) { animation-delay: 0.5s; color: #3498db; }
+.colorful-letters span:nth-child(7) { animation-delay: 0.6s; color: #9b59b6; }
+.colorful-letters span:nth-child(8) { animation-delay: 0.7s; color: #34495e; }
+.colorful-letters span:nth-child(9) { animation-delay: 0.8s; color: #e74c3c; }
+.colorful-letters span:nth-child(10) { animation-delay: 0.9s; color: #e67e22; }
+.colorful-letters span:nth-child(11) { animation-delay: 1s; color: #f1c40f; }
+/* Add more colors if necessary */
+
+@keyframes letter-fade {
+    0% { opacity: 0; transform: translateZ(-30px); }
+    100% { opacity: 1; transform: translateZ(0); }
+}

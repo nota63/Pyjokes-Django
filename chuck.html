@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuck</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'chuck.css' %}">
+</head>
+<body>
+     <p> Chuck jokes would be appear here</p>
+
+   <section>
+       <div>
+           <h1>Your Chuck Jokes Below</h1>
+
+<!--           <label>Neutral Joke</label>-->
+           <input type="text" value="{{chuck}}" class="-chuck-class">
+       </div>
+   </section>
+   <br>
+
+      <section>
+          <div>
+              <a href="{% url 'home' %}">
+                  <button type="submit">Menu</button>
+              </a>
+          </div>
+      </section>
+
+
+</body>
+</html>

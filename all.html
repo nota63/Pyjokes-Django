@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'all.css' %}">
+</head>
+<body>
+    <p> All Categories  jokes would be appear here</p>
+
+   <section>
+       <div>
+           <h1>Your Jokes Below</h1>
+
+<!--           <label>Neutral Joke</label>-->
+           <input type="text" value="{{all}}" class="-all-class">
+       </div>
+   </section>
+
+   <br>
+
+      <section>
+          <div>
+              <a href="{% url 'home' %}">
+                  <button type="submit">Menu</button>
+              </a>
+          </div>
+      </section>
+
+
+</body>
+</html>

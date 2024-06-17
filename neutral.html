@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neutral</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'neutral.css'%}">
+</head>
+<body>
+
+
+   <section>
+       <div>
+           <h1>Your Neutral Joke Below</h1>
+
+<!--           <label>Neutral Joke</label>-->
+           <input type="text" value="{{neutral}}" class="-neutral-class">
+       </div>
+   </section>
+
+   <br>
+
+      <section>
+          <div>
+              <a href="{% url 'home' %}">
+                  <button type="submit">Menu</button>
+              </a>
+          </div>
+      </section>
+
+
+</body>
+</html>

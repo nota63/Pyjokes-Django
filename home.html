@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+     <h1>This is Home</h1>
+ <p>Tap Any Image To Get Joke Related With</p>
+
+ <section id="2">
+     <div class="Neutral">
+         <a href="{% url 'neutral' %}">
+             <img src="https://jokojokes.com/thumbnails/neutral-jokes.jpg" height="60">
+         </a>
+         <p>Neutral</p>
+     </div>
+ </section>
+
+  <br>
+
+  <section id="3">
+      <div class="chuck">
+          <a href="{% url 'chuck' %}">
+              <img src="https://th.bing.com/th/id/OIP.GpL2lnG3Wp6saWborqqSYAHaD-?rs=1&pid=ImgDetMain" height="60">
+          </a>
+          <p>Chuck</p>
+      </div>
+  </section>
+  <br>
+
+  <section id="4">
+      <div class="spanish">
+          <a href="{% url 'spanish' %}">
+              <img src="https://yellowjokes.com/assets/img/jokes/143575.jpg" height="60">
+          </a>
+          <p>Spanish</p>
+      </div>
+  </section>
+  <br>
+
+  <section id="5">
+      <div class="all">
+          <a href="{% url 'all' %}">
+              <img src="https://th.bing.com/th/id/OIP.yk9RjGW9pT8d49r3FqZicgAAAA?rs=1&pid=ImgDetMain" height="60">
+          </a>
+          <p>All Categories</p>
+      </div>
+  </section>

@@ -1,0 +1,103 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 250px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+h1 {
+    grid-column: span 2;
+    color: #333;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+p {
+    grid-column: span 2;
+    color: #555;
+    font-size: 0.9em;
+    margin: 5px 0 15px 0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 5px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes colorful-text {
+    0% { color: red; }
+    20% { color: orange; }
+    40% { color: yellow; }
+    60% { color: green; }
+    80% { color: blue; }
+    100% { color: purple; }
+}
+
+.joke-letter {
+    font-weight: bold;
+    font-size: 1em;
+    display: inline-block;
+    transform: rotateY(360deg);
+    animation: colorful-text 1s infinite;
+}
+
+#joke-display {
+    grid-column: span 2;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #333;
+}

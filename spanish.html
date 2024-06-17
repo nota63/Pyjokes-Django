@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>spanish</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'spanish.css' %}">
+</head>
+<body>
+    <p> Spanish jokes would be appear here</p>
+
+   <section>
+       <div>
+           <h1>Your Spanish Joke Below</h1>
+
+<!--           <label>Neutral Joke</label>-->
+           <input type="text" value="{{spanish}}" class="-spanish-class">
+       </div>
+   </section>
+
+   <br>
+
+      <section>
+          <div>
+              <a href="{% url 'home' %}">
+                  <button type="submit">Menu</button>
+              </a>
+          </div>
+      </section>
+
+
+</body>
+</html>
